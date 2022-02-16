@@ -3,7 +3,6 @@ import React from 'react';
 
 // create NasaVideo structure
 const NasaVideo = (props) => {
-    console.log(props.video)
     return (
         <div className='nasaVideo'>
             <h3>{props.video.title}</h3>
