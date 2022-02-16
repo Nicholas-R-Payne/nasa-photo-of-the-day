@@ -3,6 +3,8 @@ import React, {useState, useEffect} from "react";
 // import axios
 import axios from 'axios';
 import "./App.css";
+// import NasaVideo
+import NasaVideo from "./Components/NasaVideo";
 // create dummyData
 const dummyData = {
   date: "2022-02-16",
@@ -24,7 +26,9 @@ function App() {
       .catch(err => console.error(err))
   }, [])
   return (
+    // render NasaVideo
     <div className="App">
+      <NasaVideo video={data} />
     </div>
   );
 }

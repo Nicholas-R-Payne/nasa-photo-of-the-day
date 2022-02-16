@@ -1,5 +1,5 @@
 // import React
-import React from "react";
+import React from 'react';
 // bring over dummyData
 const dummyData = {
     date: "2022-02-16",
@@ -9,14 +9,20 @@ const dummyData = {
   }
 // create NasaVideo
 const NasaVideo = (props) => {
-    return {
+    console.log(props.video)
+    return (
         <div className='nasaVideo'>
-            <h3>{props.video.title}</h3>
-            <p>{props.video.data}</p>
-            <video src=props.video.url />
+            <p>{props.video.date}</p>
+            <iframe
+                width="640"
+                height="480"
+                title={props.video.title}
+                src={props.video.url}
+                controls
+            />
             <p>{props.video.explanation}</p>
         </div>
-    }
+    )
 }
 // export NasaVideo
 export default NasaVideo
