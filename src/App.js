@@ -1,4 +1,7 @@
-import React from "react";
+// add useState and useEffect
+import React, {useState, useEffect} from "react";
+// import axios
+import axios from 'axios';
 import "./App.css";
 
 function App() {
