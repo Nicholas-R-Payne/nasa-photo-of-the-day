@@ -1,5 +1,23 @@
 // import React
 import React from 'react';
+// import styled
+import styled, {keyframes} from 'styled-components';
+
+// create animation
+const kf = keyframes`
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+`
+
+// create styles
+const StyledPhoto = styled.div`
+    
+`
 
 // create NasaPhoto structure
 const NasaPhoto = (props) => {
