@@ -1,6 +1,6 @@
 // add theme
 export default {
-    primaryColor: 'royalblue',
+    primaryColor: 'skyblue',
     secondaryColor: 'crimson',
     tertiaryColor: 'mediumseagreen',
     black: 'black',

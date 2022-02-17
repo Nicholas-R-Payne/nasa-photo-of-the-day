@@ -16,19 +16,22 @@ const kf = keyframes`
 
 // create styles
 const StyledPhoto = styled.div`
+    background-color: ${pr => pr.theme.primaryColor};
     
+    h3{
+        color: ${pr => pr.theme.secondaryColor};
+    }
 `
 
 // create NasaPhoto structure
 const NasaPhoto = (props) => {
-    console.log(props.photo)
     return (
-        <div className='nasaPhoto'>
+        <StyledPhoto className='nasaPhoto'>
             <h3>{props.photo.title}</h3>
             <p>{props.photo.date}</p>
             <img src={props.photo.hdurl} />
             <p>{props.photo.explanation}</p>
-        </div>
+        </StyledPhoto>
     )
 }
 // export NasaPhoto
