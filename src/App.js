@@ -3,8 +3,8 @@ import React, {useState, useEffect} from "react";
 // import axios
 import axios from 'axios';
 import "./App.css";
-// import NasaVideo
-import NasaVideo from "./Components/NasaVideo";
+// import NasaPhoto
+import NasaPhoto from "./Components/NasaPhoto";
 
 function App() {
   // create state
@@ -19,9 +19,9 @@ function App() {
       .catch(err => console.error(err))
   }, [])
   return (
-    // render NasaVideo
+    // render NasaPhoto
     <div className="App">
-      {data && <NasaVideo video={data} />}
+      {data && <NasaPhoto photo={data} />}
     </div>
   );
 }
