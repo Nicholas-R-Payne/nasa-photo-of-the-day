@@ -10,7 +10,7 @@ const kf = keyframes`
     }
     100% {
         opacity: 1;
-        transform: scale(1);
+        transform: scale(1) rotateZ(0);
     }
 `
 
@@ -18,8 +18,18 @@ const kf = keyframes`
 const StyledPhoto = styled.div`
     background-color: ${pr => pr.theme.primaryColor};
     
-    h3{
+    h3 {
         color: ${pr => pr.theme.secondaryColor};
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    img {
+        opacity: 0;
+        transform: scale(2) rotateZ(180deg);
+        animation: ${kf} 0.5s ease-in-out forwards;
     }
 `
 
